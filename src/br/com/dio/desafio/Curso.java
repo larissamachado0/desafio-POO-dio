@@ -1,13 +1,11 @@
 package br.com.dio.desafio;
 
-import java.time.LocalDate;
-
-public class Mentoria {
+public class Curso {
     private String titulo;
     private String descricao;
-    private LocalDate data;
+    private int cargaHoraria;
 
-    public Mentoria() {
+    public Curso() {
     }
 
     public String getTitulo() {
@@ -26,20 +24,20 @@ public class Mentoria {
         this.descricao = descricao;
     }
 
-    public LocalDate getData() {
-        return data;
+    public int getCargaHoraria() {
+        return cargaHoraria;
     }
 
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setCargaHoraria(int cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
     }
 
     @Override
     public String toString() {
-        return "Mentoria{" +
+        return "Curso{" +
                 "titulo='" + titulo + '\'' +
                 ", descricao='" + descricao + '\'' +
-                ", data=" + data +
+                ", cargaHoraria=" + cargaHoraria +
                 '}';
     }
 }
